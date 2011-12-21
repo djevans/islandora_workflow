@@ -1,0 +1,124 @@
+INFO 2011-12-14 20:24:09,367 (UpdateListener) Initializing the Update Listener
+INFO 2011-12-14 20:24:09,461 (Config) fedoragsearch.properties={fedoragsearch.maxPageSize=50, fedoragsearch.indexNames=gsearch_solr, fedoragsearch.defaultGetRepositoryInfoRestXslt=demoGetRepositoryInfoToHtml, fedoragsearch.defaultBrowseIndexTermPageSize=20, fedoragsearch.defaultBrowseIndexRestXslt=demoBrowseIndexToHtml, fedoragsearch.defaultGfindObjectsHitPageSize=10, fedoragsearch.defaultGfindObjectsFieldMaxLength=100, fedoragsearch.defaultGfindObjectsSnippetsMax=3, fedoragsearch.defaultGfindObjectsRestXslt=demoGfindObjectsToHtml, fedoragsearch.mimeTypes=text/plain text/html application/pdf, fedoragsearch.updaterNames=BasicUpdaters, fedoragsearch.deployFile=CONFIGPATH/deploy.wsdd, fedoragsearch.soapUser=fedoraAdmin, fedoragsearch.soapPass=hetcoch, fedoragsearch.defaultGetIndexInfoRestXslt=demoGetIndexInfoToHtml, fedoragsearch.defaultUpdateIndexRestXslt=demoUpdateIndexToHtml, fedoragsearch.soapBase=http://localhost:8080/fedoragsearch/services, fedoragsearch.repositoryNames=gsearch_solr, fedoragsearch.defaultNoXslt=copyXml}
+INFO 2011-12-14 20:24:09,519 (Config) /config/repository/gsearch_solr/repository.properties={fgsrepository.repositoryName=gsearch_solr, fgsrepository.trustStorePath=/usr/local/fedora/server/truststore, fgsrepository.defaultGetRepositoryInfoResultXslt=copyXml, fgsrepository.fedoraPass=hetcoch, fgsrepository.fedoraObjectDir=/usr/local/fedora/data/objectStore, fgsrepository.fedoraUser=fedoraAdmin, fgsrepository.fedoraVersion=3.4, fgsrepository.trustStorePass=tomcat, fgsrepository.fedoraSoap=http://localhost:8080/fedora/services}
+INFO 2011-12-14 20:24:09,539 (Config) /config/index/gsearch_solr/index.properties={fgsindex.defaultQueryFields=dc.description dc.title, fgsindex.defaultUpdateIndexDocXslt=demoFoxmlToSolr, fgsindex.defaultGfindObjectsResultXslt=gfindObjectsToResultPage, fgsindex.defaultGetIndexInfoResultXslt=copyXml, fgsindex.operationsImpl=dk.defxws.fgssolr.OperationsImpl, fgsindex.indexName=gsearch_solr, fgsindex.defaultUpdateIndexResultXslt=updateIndexToResultPage, fgsindex.indexBase=http://localhost:8080/solr, fgsindex.analyzer=org.apache.lucene.analysis.standard.StandardAnalyzer, fgsindex.defaultBrowseIndexResultXslt=browseIndexToResultPage, fgsindex.indexDir=/usr/local/fedora/gsearch_solr/solr/data/index}
+DEBUG 2011-12-14 20:24:09,539 (Config) config created configName=config errors=
+DEBUG 2011-12-14 20:24:09,539 (Config) fedoragsearch.properties={fedoragsearch.maxPageSize=50, fedoragsearch.indexNames=gsearch_solr, fedoragsearch.defaultGetRepositoryInfoRestXslt=demoGetRepositoryInfoToHtml, fedoragsearch.defaultBrowseIndexTermPageSize=20, fedoragsearch.defaultBrowseIndexRestXslt=demoBrowseIndexToHtml, fedoragsearch.defaultGfindObjectsHitPageSize=10, fedoragsearch.defaultGfindObjectsFieldMaxLength=100, fedoragsearch.defaultGfindObjectsSnippetsMax=3, fedoragsearch.defaultGfindObjectsRestXslt=demoGfindObjectsToHtml, fedoragsearch.mimeTypes=text/plain text/html application/pdf, fedoragsearch.updaterNames=BasicUpdaters, fedoragsearch.deployFile=CONFIGPATH/deploy.wsdd, fedoragsearch.soapUser=fedoraAdmin, fedoragsearch.soapPass=hetcoch, fedoragsearch.defaultGetIndexInfoRestXslt=demoGetIndexInfoToHtml, fedoragsearch.defaultUpdateIndexRestXslt=demoUpdateIndexToHtml, fedoragsearch.soapBase=http://localhost:8080/fedoragsearch/services, fedoragsearch.repositoryNames=gsearch_solr, fedoragsearch.defaultNoXslt=copyXml}
+DEBUG 2011-12-14 20:24:09,550 (Config) checkStylesheet for /config/rest/copyXml.xslt
+DEBUG 2011-12-14 20:24:10,340 (Config) checkStylesheet for /config/rest/demoGfindObjectsToHtml.xslt
+DEBUG 2011-12-14 20:24:10,409 (Config) checkStylesheet for /config/rest/demoUpdateIndexToHtml.xslt
+DEBUG 2011-12-14 20:24:10,450 (Config) checkStylesheet for /config/rest/demoBrowseIndexToHtml.xslt
+DEBUG 2011-12-14 20:24:10,497 (Config) checkStylesheet for /config/rest/demoGetRepositoryInfoToHtml.xslt
+DEBUG 2011-12-14 20:24:10,510 (Config) checkStylesheet for /config/rest/demoGetIndexInfoToHtml.xslt
+INFO 2011-12-14 20:24:10,574 (Config) /config/updater/BasicUpdaters/updater.properties={connection.factory.name=ConnectionFactory, topic.fedoraAPIM=fedora.apim.update, java.naming.provider.url=tcp://localhost:61616, java.naming.factory.initial=org.apache.activemq.jndi.ActiveMQInitialContextFactory, client.id=fedoragsearch0}
+DEBUG 2011-12-14 20:24:10,574 (Config) /config/repository/gsearch_solr/repository.properties={fgsrepository.repositoryName=gsearch_solr, fgsrepository.trustStorePath=/usr/local/fedora/server/truststore, fgsrepository.defaultGetRepositoryInfoResultXslt=copyXml, fgsrepository.fedoraPass=hetcoch, fgsrepository.fedoraObjectDir=/usr/local/fedora/data/objectStore, fgsrepository.fedoraUser=fedoraAdmin, fgsrepository.fedoraVersion=3.4, fgsrepository.trustStorePass=tomcat, fgsrepository.fedoraSoap=http://localhost:8080/fedora/services}
+DEBUG 2011-12-14 20:24:10,594 (Config) checkStylesheet for /config/repository/gsearch_solr/copyXml.xslt
+DEBUG 2011-12-14 20:24:10,598 (Config) /config/index/gsearch_solr/index.properties={fgsindex.defaultQueryFields=dc.description dc.title, fgsindex.defaultUpdateIndexDocXslt=demoFoxmlToSolr, fgsindex.defaultGfindObjectsResultXslt=gfindObjectsToResultPage, fgsindex.defaultGetIndexInfoResultXslt=copyXml, fgsindex.operationsImpl=dk.defxws.fgssolr.OperationsImpl, fgsindex.indexName=gsearch_solr, fgsindex.defaultUpdateIndexResultXslt=updateIndexToResultPage, fgsindex.indexBase=http://localhost:8080/solr, fgsindex.analyzer=org.apache.lucene.analysis.standard.StandardAnalyzer, fgsindex.defaultBrowseIndexResultXslt=browseIndexToResultPage, fgsindex.indexDir=/usr/local/fedora/gsearch_solr/solr/data/index}
+DEBUG 2011-12-14 20:24:10,675 (Config) checkStylesheet for /config/index/gsearch_solr/demoFoxmlToSolr.xslt
+DEBUG 2011-12-14 20:24:10,739 (Config) checkStylesheet for /config/index/gsearch_solr/updateIndexToResultPage.xslt
+DEBUG 2011-12-14 20:24:10,748 (Config) checkStylesheet for /config/index/gsearch_solr/gfindObjectsToResultPage.xslt
+DEBUG 2011-12-14 20:24:10,804 (Config) checkStylesheet for /config/index/gsearch_solr/browseIndexToResultPage.xslt
+DEBUG 2011-12-14 20:24:10,827 (Config) checkStylesheet for /config/index/gsearch_solr/copyXml.xslt
+DEBUG 2011-12-14 20:24:10,876 (Config) configCheck configName=config errors=
+DEBUG 2011-12-14 20:33:33,514 (UpdateListener) Received Fedora Message: ActiveMQTextMessage {commandId = 10, responseRequired = true, messageId = ID:David-Evanss-MacBook.local-56786-1323894235863-2:0:1:1:1, originalDestination = null, originalTransactionId = null, producerId = ID:David-Evanss-MacBook.local-56786-1323894235863-2:0:1:1, destination = topic://fedora.apim.update, transactionId = null, expiration = 0, timestamp = 1323894813221, arrival = 0, brokerInTime = 1323894813222, brokerOutTime = 1323894813378, correlationId = null, replyTo = null, persistent = true, type = null, priority = 4, groupID = null, groupSequence = 0, targetConsumerId = null, compressed = false, userID = null, content = org.apache.activemq.util.ByteSequence@7b5e236a, marshalledProperties = org.apache.activemq.util.ByteSequence@6167436c, dataStructure = null, redeliveryCounter = 0, size = 0, properties = null, readOnlyProperties = true, readOnlyBody = true, droppable = false, text = null}
+DEBUG 2011-12-14 20:33:33,525 (UpdateListener) Message Text: <?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:fedora-types="http://www.fedora.info/definitions/1/0/types/">
+  <id>urn:uuid:1caa5c5b-5e45-49cb-a151-58ecbf252dcd</id>
+  <updated>2011-12-14T20:33:32.541Z</updated>
+  <author>
+    <name>fedoraAdmin</name>
+    <uri>http://localhost:8080/fedora</uri>
+  </author>
+  <title type="text">modifyDatastreamByValue</title>
+  <category term="article:255" scheme="fedora-types:pid" label="xsd:string"></category>
+  <category term="RELS-EXT" scheme="fedora-types:dsID" label="xsd:string"></category>
+  <category term="" scheme="fedora-types:altIDs" label="fedora-types:ArrayOfString"></category>
+  <category term="Fedora Object-to-Object Relationship Metadata" scheme="fedora-types:dsLabel" label="xsd:string"></category>
+  <category term="" scheme="fedora-types:formatURI" label="xsd:string"></category>
+  <category term="[OMITTED]" scheme="fedora-types:dsContent" label="xsd:base64Binary"></category>
+  <category term="Disabled" scheme="fedora-types:checksumType" label="xsd:string"></category>
+  <category term="null" scheme="fedora-types:checksum" label="xsd:string"></category>
+  <category term="null" scheme="fedora-types:logMessage" label="xsd:string"></category>
+  <summary type="text">article:255</summary>
+  <content type="text">2011-12-14T20:33:32.54Z</content>
+  <category term="3.4.2" scheme="info:fedora/fedora-system:def/view#version"></category>
+  <category term="info:fedora/fedora-system:ATOM-APIM-1.0" scheme="http://www.fedora.info/definitions/1/0/types/formatURI"></category>
+</entry>
+DEBUG 2011-12-14 20:33:34,526 (GenericOperationsImpl) updateIndex action=fromPid value=article:255 repositoryName=gsearch_solr indexNames= indexDocXslt= resultPageXslt=
+DEBUG 2011-12-14 20:33:34,526 (Config) indexName=gsearch_solr operationsImpl=dk.defxws.fgssolr.OperationsImpl
+DEBUG 2011-12-14 20:33:34,526 (Config) operationsImplClass=class dk.defxws.fgssolr.OperationsImpl
+DEBUG 2011-12-14 20:33:34,527 (Config) ops=dk.defxws.fgssolr.OperationsImpl@36496381
+DEBUG 2011-12-14 20:33:35,130 (OperationsImpl) getIndexReader indexName=gsearch_solr docCount=351
+INFO 2011-12-14 20:33:35,131 (GenericOperationsImpl) getFoxmlFromPid pid=article:255 repositoryName=gsearch_solr
+DEBUG 2011-12-14 20:33:39,821 (GTransformer) xsltName=config/index/gsearch_solr/demoFoxmlToSolr
+INFO 2011-12-14 20:33:39,866 (GenericOperationsImpl) getDatastreamText pid=article:255 repositoryName=gsearch_solr dsId=MODS fedoraSoap=http://localhost:8080/fedora/services fedoraUser=fedoraAdmin fedoraPass=hetcoch trustStorePath=/usr/local/fedora/server/truststore trustStorePass=tomcat
+DEBUG 2011-12-14 20:33:40,163 (GTransformer) xsltName=config/textFromXml
+DEBUG 2011-12-14 20:33:40,189 (GenericOperationsImpl) getDatastreamText pid=article:255 dsId=MODS mimetype=text/xml dsBuffer=
+実用化を目指した放射光・機能診断X線CT装置の開発武田, 徹creatorTakeda, Torucreatorタケダ, トオルcreatorresearch papertexttext492.1医学研究代表者: 武田徹研究課題番号: 10557084放射光を利用すると高輝度な単色X線が得られ、且つ、特定の波長のX線を選択し目的とする物質の蛍光X線を高い効率で発生させる事が可能である。さらに、錯乱線を激減させる直線偏向性が利用でき、蛍光X線を利用した高感度な新しい型の機能画像診断装置を作製することが可能となる。本研究では、特定の元素から発生する蛍光X線を高い計数効率でデータ収集可能な検出器系を購入し、コリメータを非常に薄くし、且つ被写体と検出器の間隔を狭くし大量の蛍光X線を検出し、検出時間を短縮できる蛍光X線CT装置を作製した。検出限界を向上させるため、錯乱線減域少用遮へい体を作製した。http://www.tulips.tsukuba.ac.jp/limedio/dlam/B16/B1622838/1.pdf2006-01-13T10:17:27Z2007-03-012007-03-01T09:26:35Z2000http://hdl.handle.net/2241/366http://hdl.handle.net/2241/3662000科学研究費補助金(基盤研究(B)(1))研究成果報告書 ~ 平成10-11年度jpnja
+INFO 2011-12-14 20:33:40,198 (GenericOperationsImpl) getDatastreamText pid=article:255 repositoryName=gsearch_solr dsId=TN fedoraSoap=http://localhost:8080/fedora/services fedoraUser=fedoraAdmin fedoraPass=hetcoch trustStorePath=/usr/local/fedora/server/truststore trustStorePass=tomcat
+DEBUG 2011-12-14 20:33:40,277 (GenericOperationsImpl) getDatastreamText pid=article:255 dsId=TN mimetype=image/png dsBuffer=
+DEBUG 2011-12-14 20:33:40,283 (OperationsImpl) indexDoc=
+<?xml version="1.0" encoding="UTF-8"?>
+<add xmlns:uvalibadmin="http://dl.lib.virginia.edu/bin/admin/admin.dtd/" xmlns:uvalibdesc="http://dl.lib.virginia.edu/bin/dtd/descmeta/descmeta.dtd" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:zs="http://www.loc.gov/zing/srw/">
+<doc boost="3.5">
+<field boost="2.5" name="PID">article:255</field>
+<field name="fgs.state">Active</field>
+<field name="fgs.label">????????????????X?CT?????</field>
+<field name="fgs.ownerId">Owner</field>
+<field name="fgs.createdDate">2011-12-11T23:37:30.413Z</field>
+<field name="fgs.lastModifiedDate">2011-12-14T20:33:32.540Z</field>
+<field name="dc.title">????????????????X?CT?????</field>
+<field name="dc.creator">??, ?</field>
+<field name="dc.creator">Takeda, Toru</field>
+<field name="dc.creator">???, ???</field>
+<field name="dc.subject">492.1</field>
+<field name="dc.subject">??</field>
+<field name="dc.description">?????: ???</field>
+<field name="dc.description">??????: 10557084</field>
+<field name="dc.description">???????????????X???????????????X???????????????X??????????????????????????????????????????????X????????????????????????????????????????????????????????X????????????????????????????????????????????????????????????X??????????????????X?CT??????????????????????????????????????</field>
+<field name="dc.description">http://www.tulips.tsukuba.ac.jp/limedio/dlam/B16/B1622838/1.pdf</field>
+<field name="dc.publisher"/>
+<field name="dc.contributor"/>
+<field name="dc.date">2006-01-13T10:17:27Z</field>
+<field name="dc.date">2007-03-01</field>
+<field name="dc.date">2007-03-01T09:26:35Z</field>
+<field name="dc.date">2000</field>
+<field name="dc.type">Research Paper</field>
+<field name="dc.type">text</field>
+<field name="dc.format"/>
+<field name="dc.identifier">http://hdl.handle.net/2241/366</field>
+<field name="dc.identifier">2000</field>
+<field name="dc.source"/>
+<field name="dc.language">jpn</field>
+<field name="dc.language">ja</field>
+<field name="dc.relation">????????(????(B)(1))??????? ~ ??10-11??</field>
+<field name="dc.coverage"/>
+<field name="dc.rights"/>
+<field termVector="NO" store="YES" index="TOKENIZED" name="dsm.MODS">
+実用化を目指した放射光・機能診断X線CT装置の開発武田, 徹creatorTakeda, Torucreatorタケダ, トオルcreatorresearch papertexttext492.1医学研究代表者: 武田徹研究課題番号: 10557084放射光を利用すると高輝度な単色X線が得られ、且つ、特定の波長のX線を選択し目的とする物質の蛍光X線を高い効率で発生させる事が可能である。さらに、錯乱線を激減させる直線偏向性が利用でき、蛍光X線を利用した高感度な新しい型の機能画像診断装置を作製することが可能となる。本研究では、特定の元素から発生する蛍光X線を高い計数効率でデータ収集可能な検出器系を購入し、コリメータを非常に薄くし、且つ被写体と検出器の間隔を狭くし大量の蛍光X線を検出し、検出時間を短縮できる蛍光X線CT装置を作製した。検出限界を向上させるため、錯乱線減域少用遮へい体を作製した。http://www.tulips.tsukuba.ac.jp/limedio/dlam/B16/B1622838/1.pdf2006-01-13T10:17:27Z2007-03-012007-03-01T09:26:35Z2000http://hdl.handle.net/2241/366http://hdl.handle.net/2241/3662000科学研究費補助金(基盤研究(B)(1))研究成果報告書 ~ 平成10-11年度jpnja</field>
+<field termVector="NO" store="YES" index="TOKENIZED" name="dsm.TN"/>
+</doc>
+</add>
+
+DEBUG 2011-12-14 20:33:41,707 (OperationsImpl) getIndexReader indexName=gsearch_solr docCount=351
+DEBUG 2011-12-14 20:33:41,787 (OperationsImpl) closeIndexReader indexName=gsearch_solr docCount=351
+DEBUG 2011-12-14 20:33:41,787 (OperationsImpl) initDocCount=351 docCount=351 updateTotal=1
+INFO 2011-12-14 20:33:41,789 (OperationsImpl) updateIndex fromPid indexName=gsearch_solr indexDirSpace=454272 docCount=351
+DEBUG 2011-12-14 20:33:41,789 (OperationsImpl) resultXml =
+<solrUpdateIndex indexName="gsearch_solr">
+<counts insertTotal="0" updateTotal="1" deleteTotal="0" docCount="351" warnCount="0"/>
+</solrUpdateIndex>
+
+DEBUG 2011-12-14 20:33:41,789 (GTransformer) xsltName=config/index/gsearch_solr/updateIndexToResultPage
+DEBUG 2011-12-14 20:33:41,795 (GenericOperationsImpl) resultXml=<?xml version="1.0" encoding="UTF-8"?>
+<resultPage operation="updateIndex" action="fromPid" value="article:255" repositoryName="gsearch_solr" indexNames="" resultPageXslt="" dateTime="Wed Dec 14 20:33:34 GMT 2011">
+<updateIndex xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:zs="http://www.loc.gov/zing/srw/" warnCount="0" docCount="351" deleteTotal="0" updateTotal="1" insertTotal="0" indexName="gsearch_solr"/>
+</resultPage>
+
+INFO 2011-12-14 20:33:41,795 (UpdateListener) Index updated by notification message, returning:
+<?xml version="1.0" encoding="UTF-8"?>
+<resultPage operation="updateIndex" action="fromPid" value="article:255" repositoryName="gsearch_solr" indexNames="" resultPageXslt="" dateTime="Wed Dec 14 20:33:34 GMT 2011">
+<updateIndex xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:zs="http://www.loc.gov/zing/srw/" warnCount="0" docCount="351" deleteTotal="0" updateTotal="1" insertTotal="0" indexName="gsearch_solr"/>
+</resultPage>
+
+WARN 2011-12-16 03:00:28,967 (UpdateListener) Messaging exception encountered stopping the messaging client: The JMS connection has failed: java.io.EOFException. This error is expected and can be ignored if the message broker was shut down prior to the UpdateListener.
